@@ -1,0 +1,80 @@
+.home-main-sec {
+    background: url(../assets/Background.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.main-section {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.home-main-sec h1 {
+    font-size: 13rem;
+    display: inline;
+}
+
+.home-main-sec h2 {
+    font-size: 4rem;
+    display: inline;
+    color: #f8de01;
+}
+
+.logo-and-spree {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 300px;
+    padding-right: 2.5rem;
+    padding-bottom: 30px;
+}
+
+.main-spree-text {
+    text-align: right;
+    font-family: 'Arvo', serif;
+    font-style: italic;
+}
+
+.home-main-sec a:hover {
+    color: white;
+    transition: 200ms ease-in;
+}
+
+.follow-icon {
+    width: 60px;
+}
+
+.main-footer {
+    position: absolute;
+    top: 88%;
+    right: 5%;
+}
+
+.main-footer h2,
+.main-footer img {
+    margin-right: 1.5rem;
+    vertical-align: top;
+}
+
+.main-footer img {
+    cursor: pointer;
+}
+
+.main-footer h2 {
+    font-size: 3rem;
+    color: #f8de01;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}

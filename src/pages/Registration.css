@@ -1,0 +1,109 @@
+.registration-cover {
+    background: url('../assets/registration_bg1.png');
+}
+
+.registration {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url(../assets/registration_bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3vw solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+.registration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.registration-grid input {
+    margin: 1.5rem auto;
+}
+
+.dropdown.bootstrap-select {
+    width: 30rem !important;
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    padding-left: 3.5%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button.dropdown-toggle {
+    position: relative;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background: white;
+    padding: 0;
+    margin-left: .6rem;
+}
+
+.dropdown-toggle:focus {
+    outline: none;
+}
+
+.dropdown-toggle::after {
+    color: black;
+}
+
+.filter-option {
+    background: white;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.filter-option-inner {
+    color: white;
+    background: white;
+    padding: 0;
+}
+
+.filter-option-inner-inner {
+    background: white;
+    margin-bottom: 1rem;
+    color: black;
+    padding: 0;
+}
+
+.submitBtn {
+    width: 15rem !important;
+    height: 4rem;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 3rem;
+    border-radius: 1.5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}

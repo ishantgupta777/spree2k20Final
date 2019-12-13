@@ -1,0 +1,24 @@
+select {
+    width: 30rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    padding-left: 3.5%;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: normal;
+    background: white;
+    margin: 24px auto;
+    appearance: none;
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 97% !important;
+}
+
+option {
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+    text-transform: capitalize;
+}

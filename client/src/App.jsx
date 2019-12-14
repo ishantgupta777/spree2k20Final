@@ -8,7 +8,7 @@ export default class App extends Component {
 		return (
 			<BrowserRouter>
 				<Route exact path="/" component={HomePage} />
-				<Route exact path="/registration" component={Registration} />
+				<Route path="/registration" component={Registration} />
 			</BrowserRouter>
 		);
 	}

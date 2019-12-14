@@ -24,10 +24,10 @@ const HomePageFirstSection = () => {
 
 				<div className="main-footer">
 					<h2>FOLLOW US ON </h2>
-					<Link to="https://www.facebook.com/bitsspree/">
+					<a href="https://www.facebook.com/bitsspree/" target="_blank">
 						<img className="follow-icon" src={require('../assets/layers/Facebook1.png')} alt="" />
-					</Link>
-					<Link>
+					</a>
+					<Link to='/'>
 						<img className="follow-icon" src={require('../assets/layers/Twitter.png')} alt="" />
 					</Link>
 				</div>

@@ -13,23 +13,57 @@ export default class Registration extends Component {
 		phone: '',
 		year: '',
 		gender: '',
-		sports: [ 'event1', 'event2', 'event3', 'event4', 'event5' ],
+		sports: ['Cricket Boys',
+			'Football Boys', 
+			'Football Girls',
+			'Badminton Boys (Team)',
+			'Badminton Girls (Team)',
+			'Badminton Boys (Individuals)',
+			'Badminton Girls (Individuals)',
+			'Basketball Boys',
+			'Basketball Girls',
+			'Table-Tennis Boys (Team)',
+			'Table-Tennis Girls (Team)',
+			'Table-Tennis Boys (Individual)',
+			'Table-Tennis Girls (Individual)',
+			'Volleyball Boys',
+			'Volleyball Girls',
+			'Tennis Boys (Team)',
+			'Tennis Boys (Individual)',
+			'Tennis Girls (Individual)',
+			'Kabaddi Boys',
+			'Chess (Boys Girls Mix)',
+			'Squash Team (Boys Girl Mix)',
+			'Squash Individuals',
+			'Powerlifting (55kg-65kg)',
+			'Powerlifting (65kg-75kg)',
+			'Powerlifting (75kg and above)',
+			'Carrom (Boys Girls Mix)',
+			'Snooker' ],
 		city: '',
 		selectedSports: [],
-		yearOfStudy: [ 1, 2, 3, 4, 5 ]
+		yearOfStudy: [ 1, 2, 3, 4, 5 ],
+		showPlaceholder : true
 	};
 	handleChange = (e) => {
+
 		e.preventDefault();
 		if (e.target.name === 'sports') {
-			this.setState({ selectedSports: [ ...this.state.selectedSports, e.target.value ] });
+			if(this.state.selectedSports!=[]){
+				this.setState({showPlaceholder:false})
+			}else{
+				this.setState({showPlaceholder:true})
+			}
+			this.setState({selectedSports:[...this.refs.sports.selectedOptions].map(o=>o.value).filter(e=>e!=='')})
+			
 		} else {
-			this.setState({ [e.target.name]: e.target.value }, () => console.log(this.state));
+			this.setState({ [e.target.name]: e.target.value });
 		}
 	};
-	handleSubmit = (e)=>{
-		e.preventDefault()
-		console.log(this.state);
-	}
+	handleSubmit = (e) => {
+		e.preventDefault();
+		document.querySelector('.registered-msg').innerHTML='<h1>Successfully Registered</h1>'
+	};
 
 	render() {
 		return (
@@ -58,19 +92,34 @@ export default class Registration extends Component {
 								required={true}
 							/>
 
-							<select className="selectpicker" multiple data-live-search="true" required={true}>
-								<option selected disabled hidden>
-									Sports
-								</option>
+							<select
+								className="selectpicker"
+								multiple
+								data-live-search="true"
+								required={true}
+								onChange={this.handleChange}
+								name="sports"
+								ref="sports"
+							>
+								
 								{this.state.sports.map((e) => (
-									<option value={e} key={e}>
+									<option value={e} key={e} >	
 										{e}{' '}
 									</option>
 								))}
+								<option  value="" selected={this.state.showPlaceholder} disabled>
+									Sports
+								</option>
 							</select>
 
-								<button className="submitBtn"  type="submit" >Register</button>
+							<button className="submitBtn" type="submit" >
+								Register
+							</button>
+							
 						</div>
+						<div className="registered-msg" >
+								
+							</div>
 					</form>
 				</section>
 			</div>

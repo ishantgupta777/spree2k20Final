@@ -3,10 +3,16 @@ import './OptionInput.css';
 
 export default class OptionInput extends Component {
 	render() {
-		const { values, placeholder, required,multiple } = this.props;
+		const { values, placeholder, required, multiple } = this.props;
 		return (
 			<div>
-				<select required={required} defaultValue={'DEFAULT'} multiple={multiple}>
+				<select
+					required={required}
+					defaultValue={'DEFAULT'}
+					multiple={multiple}
+					onChange={this.props.handleChange}
+					name={this.props.name}
+				>
 					<option disabled value="DEFAULT">
 						{placeholder}
 					</option>

@@ -107,3 +107,13 @@ button.dropdown-toggle {
 .submitBtn:hover {
     cursor: pointer;
 }
+
+.registered-msg h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1.8rem;
+}

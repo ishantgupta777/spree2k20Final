@@ -3,6 +3,7 @@ import './Registration.css';
 import RegistrationNav from '../components/registration-nav';
 import InputField from '../components/registration-input';
 import OptionInput from '../components/OptionInput';
+import axios from 'axios'
 
 export default class Registration extends Component {
 	state = {
@@ -64,9 +65,12 @@ export default class Registration extends Component {
 	};
 	handleSubmit = (e) => {
 		e.preventDefault();
-		document.querySelector('.registered-msg').innerHTML = '<h1>Successfully Registered</h1>';
+		const {name, email,city,phone,college,year,gender,selectedSports} = this.state
+		const data = {name, email,city,phone,college,year,gender,selectedSports}
+		axios.post('/register',data)
+		.then((response)=>{document.querySelector('.registered-msg').innerHTML = '<h1>Successfully Registered</h1>'})
+		.catch((error)=>{document.querySelector('.registered-msg').innerHTML = '<h1>Unsuccessfully Registered</h1>'})
 	};
-
 	render() {
 		return (
 			<div className="registration-cover">

@@ -24,7 +24,7 @@ const HomePageFirstSection = () => {
 
 				<div className="main-footer">
 					<h2>FOLLOW US ON </h2>
-					<Link>
+					<Link to="https://www.facebook.com/bitsspree/">
 						<img className="follow-icon" src={require('../assets/layers/Facebook1.png')} alt="" />
 					</Link>
 					<Link>

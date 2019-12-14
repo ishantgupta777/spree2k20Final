@@ -7,7 +7,7 @@ const nav = () => {
 		<div>
 			<ul className="main-nav">
 				<li>
-					<Link>Events</Link>
+					<Link to="/">Events</Link>
 				</li>
 				<li>
 					<Link to="/registration">Registration</Link>

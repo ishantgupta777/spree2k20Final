@@ -1,38 +1,31 @@
 {
   "name": "spree2k20final",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "express": "^4.17.1",
-    "mongoose": "^5.8.1",
-    "multiselect-react-dropdown": "^1.2.8",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"  ",
+    "build": "cd client && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ishantgupta777/spree2k20Final.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Ishant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ishantgupta777/spree2k20Final/issues"
+  },
+  "homepage": "https://github.com/ishantgupta777/spree2k20Final#readme",
+  "dependencies": {
+    "concurrently": "^5.0.1",
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }

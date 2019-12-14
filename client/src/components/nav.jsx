@@ -10,7 +10,7 @@ const nav = () => {
 					<Link to="/">Events</Link>
 				</li>
 				<li>
-					<Link to="/registration">Registration</Link>
+					<a href="https://guarded-bayou-35140.herokuapp.com/registration">Registration</a>
 				</li>
 			</ul>
 		</div>

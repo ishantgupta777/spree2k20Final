@@ -5,6 +5,7 @@ import InputField from '../components/registration-input';
 import OptionInput from '../components/OptionInput';
 import axios from 'axios'
 
+
 export default class Registration extends Component {
 	state = {
 		name: '',

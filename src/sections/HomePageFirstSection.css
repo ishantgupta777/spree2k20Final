@@ -78,3 +78,107 @@
     font-family: 'Montserrat';
     font-weight: 700;
 }
+
+@media (max-width:1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main-nav {
+        margin-top: 2rem;
+    }
+
+    .main-nav a {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width:1000px) {
+    html {
+        font-size: 12px;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .main-nav a {
+        font-size: 2.5rem;
+    }
+
+    .home-main-sec h1 {
+        font-size: 11rem;
+    }
+
+    .home-main-sec h2 {
+        font-size: 3rem;
+    }
+
+    .main-footer h2 {
+        font-size: 3rem;
+    }
+
+    .main-footer img {
+        width: 40px;
+    }
+}
+
+@media (max-width:750px) {
+    html {
+        font-size: 10px;
+    }
+
+    .logo-and-spree {
+        flex-direction: column;
+    }
+
+    .main-section {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 8px;
+    }
+
+    .main-footer {
+        width: 100%;
+        padding-left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-footer h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 7px;
+    }
+
+    .main-footer {
+        width: 100%;
+        padding-left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        letter-spacing: 2px;
+    }
+
+    .main-footer h2 {
+        font-size: 3rem;
+    }
+
+    .main-footer img {
+        width: 3rem;
+    }
+}

@@ -13,10 +13,10 @@ app.use(cors())
 var sheet = google.sheets('v4');
 
 
-const port =  process.env.PORT || 5000
+const port = process.env.PORT || 5000
 
-app.length('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'client','build','index.html'))
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 })
 
 app.post('/register', (req, res) => {

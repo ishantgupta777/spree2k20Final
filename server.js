@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const {
     google
@@ -7,11 +8,16 @@ const keys = require('./key.json');
 
 app.use(express.static('./client/build'))
 app.use(express.json())
+app.use(cors())
 
 var sheet = google.sheets('v4');
 
 
-const port = 5000 || process.env.PORT
+const port =  process.env.PORT || 5000
+
+app.length('*',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'client','build','index.html'))
+})
 
 app.post('/register', (req, res) => {
     const {

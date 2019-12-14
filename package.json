@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "client": "cd client && npm run start",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run client\" \"npm run server\"  ",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild" : "npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/ishantgupta777/spree2k20Final#readme",
   "dependencies": {
     "concurrently": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "googleapis": "^39.2.0"
   },

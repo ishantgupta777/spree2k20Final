@@ -24,7 +24,7 @@ form {
 }
 
 .registration-grid input {
-    margin: 1.5rem auto;
+    margin: 1rem auto;
 }
 
 .dropdown.bootstrap-select {
@@ -116,4 +116,85 @@ button.dropdown-toggle {
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 1.8rem;
+}
+
+@media (max-width:1200px) {
+
+    .registration-grid input,
+    select {
+        margin: 1.5rem auto;
+    }
+
+    form {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (max-width:1000px) {
+
+    input,
+    select,
+    .dropdown.bootstrap-select {
+        width: 25rem !important;
+    }
+
+    .filter-option-inner-inner,
+    .filter-option-inner,
+    .filter-option {
+        width: 15rem;
+        margin: 0 .5rem;
+    }
+}
+
+@media (max-width:550px) {
+
+    div.registration-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    .dropdown.bootstrap-select {
+        width: 30rem !important;
+    }
+
+    .filter-option-inner-inner,
+    .filter-option-inner,
+    .filter-option {
+        width: 25rem;
+        margin: 0 .5rem;
+    }
+
+    select,
+    input,
+    .dropdown.bootstrap-select {
+        margin: 0 0;
+    }
+
+    .dropdown.bootstrap-select {
+        margin-top: 4rem;
+    }
+
+    .registration-nav img {
+        height: 50px !important;
+    }
+
+    .registration-nav h1 {
+        text-align: start;
+        padding-left: 5rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:430px) {
+
+    .registration-nav img {
+        height: 40px !important;
+    }
+
+    .registration-nav h1 {
+        padding-left: 3rem;
+        font-size: 3rem;
+    }
 }

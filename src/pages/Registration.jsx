@@ -13,8 +13,9 @@ export default class Registration extends Component {
 		phone: '',
 		year: '',
 		gender: '',
-		sports: ['Cricket Boys',
-			'Football Boys', 
+		sports: [
+			'Cricket Boys',
+			'Football Boys',
 			'Football Girls',
 			'Badminton Boys (Team)',
 			'Badminton Girls (Team)',
@@ -39,30 +40,31 @@ export default class Registration extends Component {
 			'Powerlifting (65kg-75kg)',
 			'Powerlifting (75kg and above)',
 			'Carrom (Boys Girls Mix)',
-			'Snooker' ],
+			'Snooker'
+		],
 		city: '',
 		selectedSports: [],
 		yearOfStudy: [ 1, 2, 3, 4, 5 ],
-		showPlaceholder : true
+		showPlaceholder: true
 	};
 	handleChange = (e) => {
-
 		e.preventDefault();
 		if (e.target.name === 'sports') {
-			if(this.state.selectedSports!=[]){
-				this.setState({showPlaceholder:false})
-			}else{
-				this.setState({showPlaceholder:true})
+			if (this.state.selectedSports != []) {
+				this.setState({ showPlaceholder: false });
+			} else {
+				this.setState({ showPlaceholder: true });
 			}
-			this.setState({selectedSports:[...this.refs.sports.selectedOptions].map(o=>o.value).filter(e=>e!=='')})
-			
+			this.setState({
+				selectedSports: [ ...this.refs.sports.selectedOptions ].map((o) => o.value).filter((e) => e !== '')
+			});
 		} else {
 			this.setState({ [e.target.name]: e.target.value });
 		}
 	};
 	handleSubmit = (e) => {
 		e.preventDefault();
-		document.querySelector('.registered-msg').innerHTML='<h1>Successfully Registered</h1>'
+		document.querySelector('.registered-msg').innerHTML = '<h1>Successfully Registered</h1>';
 	};
 
 	render() {
@@ -101,25 +103,21 @@ export default class Registration extends Component {
 								name="sports"
 								ref="sports"
 							>
-								
 								{this.state.sports.map((e) => (
-									<option value={e} key={e} >	
+									<option value={e} key={e}>
 										{e}{' '}
 									</option>
 								))}
-								<option  value="" selected={this.state.showPlaceholder} disabled>
+								<option value="" selected={this.state.showPlaceholder} disabled>
 									Sports
 								</option>
 							</select>
 
-							<button className="submitBtn" type="submit" >
+							<button className="submitBtn" type="submit">
 								Register
 							</button>
-							
 						</div>
-						<div className="registered-msg" >
-								
-							</div>
+						<div className="registered-msg" />
 					</form>
 				</section>
 			</div>

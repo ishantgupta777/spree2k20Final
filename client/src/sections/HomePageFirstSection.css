@@ -1,5 +1,5 @@
 .home-main-sec {
-    background: url(../assets/Background1.png);
+    background: url(../assets/Background1.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -59,7 +59,7 @@
 .main-footer {
     position: absolute;
     top: 88%;
-    right: 5%;
+    right: 7%;
 }
 
 .main-footer h2,

@@ -5,7 +5,7 @@
 .registration {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background: url(../assets/registration_bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,6 +15,7 @@
 
 form {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .registration-grid {
@@ -106,6 +107,10 @@ button.dropdown-toggle {
 
 .submitBtn:hover {
     cursor: pointer;
+}
+
+.registered-msg {
+    height: 4rem;
 }
 
 .registered-msg h1 {

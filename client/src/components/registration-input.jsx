@@ -12,6 +12,7 @@ export default class resgistrationInput extends Component {
 					name={this.props.name}
 					type={this.props.type}
 					required={this.props.required}
+					value={this.props.value}
 				/>
 			</div>
 		);

@@ -3,8 +3,7 @@ import './Registration.css';
 import RegistrationNav from '../components/registration-nav';
 import InputField from '../components/registration-input';
 import OptionInput from '../components/OptionInput';
-import axios from 'axios'
-
+import axios from 'axios';
 
 export default class Registration extends Component {
 	state = {
@@ -66,11 +65,18 @@ export default class Registration extends Component {
 	};
 	handleSubmit = (e) => {
 		e.preventDefault();
-		const {name, email,city,phone,college,year,gender,selectedSports} = this.state
-		const data = {name, email,city,phone,college,year,gender,selectedSports}
-		axios.post('/register',data)
-		.then((response)=>{document.querySelector('.registered-msg').innerHTML = '<h1>Successfully Registered</h1>'})
-		.catch((error)=>{document.querySelector('.registered-msg').innerHTML = '<h1>Unsuccessfully Registered</h1>'})
+		document.querySelector('.registered-msg').innerHTML = '<h1>Registering</h1>';
+		const { name, email, city, phone, college, year, gender, selectedSports } = this.state;
+		this.setState({ name: '', email: '', city: '', phone: '', college: '' });
+		const data = { name, email, city, phone, college, year, gender, selectedSports };
+		axios
+			.post('/register', data)
+			.then((response) => {
+				document.querySelector('.registered-msg').innerHTML = '<h1>Successfully Registered</h1>';
+			})
+			.catch((error) => {
+				document.querySelector('.registered-msg').innerHTML = '<h1>Unsuccessfully Registered</h1>';
+			});
 	};
 	render() {
 		return (
@@ -79,11 +85,41 @@ export default class Registration extends Component {
 					<RegistrationNav />
 					<form onSubmit={this.handleSubmit}>
 						<div className="registration-grid">
-							<InputField name="name" handleChange={this.handleChange} type="text" required={true} />
-							<InputField name="email" handleChange={this.handleChange} type="email" required={true} />
-							<InputField name="city" handleChange={this.handleChange} type="text" required={true} />
-							<InputField name="phone" handleChange={this.handleChange} type="number" required={true} />
-							<InputField name="college" handleChange={this.handleChange} type="text" required={true} />
+							<InputField
+								name="name"
+								handleChange={this.handleChange}
+								type="text"
+								required={true}
+								value={this.state.name}
+							/>
+							<InputField
+								name="email"
+								handleChange={this.handleChange}
+								type="email"
+								required={true}
+								value={this.state.email}
+							/>
+							<InputField
+								name="city"
+								handleChange={this.handleChange}
+								type="text"
+								required={true}
+								value={this.state.city}
+							/>
+							<InputField
+								name="phone"
+								handleChange={this.handleChange}
+								type="number"
+								required={true}
+								value={this.state.phone}
+							/>
+							<InputField
+								name="college"
+								handleChange={this.handleChange}
+								type="text"
+								required={true}
+								value={this.state.college}
+							/>
 							<OptionInput
 								name="year"
 								placeholder="Year of study"

@@ -27,9 +27,6 @@ const HomePageFirstSection = () => {
 					<a href="https://www.facebook.com/bitsspree/" target="_blank">
 						<img className="follow-icon" src={require('../assets/layers/Facebook1.png')} alt="" />
 					</a>
-					<Link to='/'>
-						<img className="follow-icon" src={require('../assets/layers/Twitter.png')} alt="" />
-					</Link>
 				</div>
 			</section>
 		</div>

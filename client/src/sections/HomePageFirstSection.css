@@ -64,7 +64,7 @@
 
 .main-footer h2,
 .main-footer img {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     vertical-align: top;
 }
 
@@ -75,8 +75,10 @@
 .main-footer h2 {
     font-size: 3rem;
     color: #f8de01;
-    font-family: 'Montserrat';
-    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
 }
 
 @media (max-width:1200px) {

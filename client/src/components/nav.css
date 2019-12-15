@@ -1,5 +1,7 @@
 .main-nav {
-    float: right;
+    position: absolute;
+    right: 9%;
+    top: 3%;
     display: flex;
     direction: row;
 }

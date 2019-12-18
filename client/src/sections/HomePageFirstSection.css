@@ -17,12 +17,14 @@
 .home-main-sec h1 {
     font-size: 13rem;
     display: inline;
+    text-shadow: 5px 9px #5f2503;
 }
 
 .home-main-sec h2 {
     font-size: 4rem;
     display: inline;
     color: #f8de01;
+    text-shadow: 3px 5px #5f2503;
 }
 
 .logo-and-spree {
@@ -53,7 +55,7 @@
 }
 
 .follow-icon {
-    width: 60px;
+    width: 50px;
 }
 
 .main-footer {
@@ -73,12 +75,16 @@
 }
 
 .main-footer h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #f8de01;
     font-weight: 600;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(0%);
 }
 
 @media (max-width:1200px) {

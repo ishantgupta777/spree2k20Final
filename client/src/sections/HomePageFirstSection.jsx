@@ -23,10 +23,20 @@ const HomePageFirstSection = () => {
 				</div>
 
 				<div className="main-footer">
-					<h2>FOLLOW US ON </h2>
-					<a href="https://www.facebook.com/bitsspree/" target="_blank">
-						<img className="follow-icon" src={require('../assets/layers/Facebook1.png')} alt="" />
-					</a>
+					<div className="follow-h2">
+						<h2>FOLLOW US ON </h2>
+					</div>
+					<div className="follow-links">
+						<a href="https://www.facebook.com/bitsspree/" target="_blank">
+							<img className="follow-icon" src={require('../assets/layers/Facebook1.png')} alt="" />
+						</a>
+						<a href="https://instagram.com/bitsspree?igshid=i9kdvvt7mcey" target="_blank">
+							<img className="follow-icon" src={require('../assets/layers/insta.png')} alt="" />
+						</a>
+						<a href="tel:+919834772359">
+							<img className="follow-icon" src={require('../assets/layers/phone.png')} alt="" />
+						</a>
+					</div>
 				</div>
 			</section>
 		</div>

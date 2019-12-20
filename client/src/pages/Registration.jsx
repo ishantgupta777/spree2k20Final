@@ -15,6 +15,7 @@ export default class Registration extends Component {
 		year: '',
 		gender: '',
 		sports: [
+			'Snooker',
 			'Cricket Boys',
 			'Football Boys',
 			'Football Girls',
@@ -40,8 +41,7 @@ export default class Registration extends Component {
 			'Powerlifting (55kg-65kg)',
 			'Powerlifting (65kg-75kg)',
 			'Powerlifting (75kg and above)',
-			'Carrom (Boys Girls Mix)',
-			'Snooker'
+			'Carrom (Boys Girls Mix)'
 		],
 		city: '',
 		selectedSports: [],

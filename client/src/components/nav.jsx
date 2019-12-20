@@ -7,7 +7,7 @@ const nav = () => {
 		<div>
 			<ul className="main-nav">
 				<li>
-					<a href="https://guarded-bayou-35140.herokuapp.com/registration">Registration</a>
+					<a href="http://www.bits-spree.org/registration">Registration</a>
 				</li>
 			</ul>
 		</div>

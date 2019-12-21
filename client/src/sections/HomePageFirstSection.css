@@ -159,13 +159,10 @@
         transform: translate(-50%, -50%);
     }
 
-    .credits h2 {
-        font-size: 1.5rem;
-        position: absolute;
-        top: 97%;
-        left: 50%;
-        transform: translateX(-50%);
+    .main-footer {
+        top: 83%;
     }
+
 }
 
 @media (max-width:600px) {

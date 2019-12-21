@@ -112,6 +112,11 @@
     width: 4rem;
 }
 
+.credits a {
+    text-decoration: none;
+    color: #f8de01;
+}
+
 @media (max-width:1200px) {
     html {
         font-size: 12px;

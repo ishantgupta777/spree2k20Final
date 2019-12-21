@@ -39,10 +39,14 @@ const HomePageFirstSection = () => {
 					</div>
 				</div>
 				<div className="devsoc-logo">
-					<img src={require('../assets/layers/devsoc.png')} alt="" />
+					<a href="http://desoc.club">
+						<img src={require('../assets/layers/devsoc.png')} alt="" />
+					</a>
 				</div>
 				<div className="credits">
-					<h2>Made with &#9829; by DevSoc </h2>
+					<h2>
+						Made with &#9829; by <a href="http://devsoc.club">DevSoc</a>{' '}
+					</h2>
 				</div>
 			</section>
 		</div>

@@ -90,12 +90,26 @@
     letter-spacing: 0px;
 }
 
-.credits h2 {
-    font-size: 1.5rem;
+.credits {
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+}
+
+.credits h2 {
+    font-size: 1.5rem;
+}
+
+.devsoc-logo {
+    position: absolute;
+    top: 88%;
+    left: 1.5%;
+}
+
+.devsoc-logo img {
+    width: 4rem;
 }
 
 @media (max-width:1200px) {
@@ -157,6 +171,10 @@
         top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .credits img {
+        width: 30px;
     }
 
     .main-footer {

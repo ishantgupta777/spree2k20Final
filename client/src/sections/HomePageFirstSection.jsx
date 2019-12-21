@@ -38,6 +38,9 @@ const HomePageFirstSection = () => {
 						</a>
 					</div>
 				</div>
+				<div className="devsoc-logo">
+					<img src={require('../assets/layers/devsoc1.png')} alt="" />
+				</div>
 				<div className="credits">
 					<h2>Made with &#9829; by DevSoc </h2>
 				</div>

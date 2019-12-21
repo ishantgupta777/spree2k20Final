@@ -7,7 +7,7 @@ const nav = () => {
 		<div>
 			<ul className="main-nav">
 				<li>
-					<a href="http://www.bits-spree.org/registration">Registration</a>
+					<a href="http://www.bits-spree.org/registration">Register Here</a>
 				</li>
 			</ul>
 		</div>

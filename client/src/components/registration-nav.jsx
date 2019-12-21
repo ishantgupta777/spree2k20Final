@@ -11,7 +11,7 @@ const registrationNav = () => {
 				</Link>
 			</div>
 			<div className="registration-heading">
-				<h1>register here</h1>
+				<h1>registration</h1>
 			</div>
 		</div>
 	);

@@ -39,7 +39,7 @@ const HomePageFirstSection = () => {
 					</div>
 				</div>
 				<div className="devsoc-logo">
-					<a href="http://desoc.club">
+					<a href="http://devsoc.club">
 						<img src={require('../assets/layers/devsoc.png')} alt="" />
 					</a>
 				</div>

@@ -32,6 +32,33 @@ app.post('/register', (req, res) => {
         selectedSports
     } = req.body
     authorize(async function (authClient) {
+
+        var request2 = {
+            spreadsheetId: '1EMVwzRCrq39C60jZXgjy4kzbeJ-4Eyj-gtsOqr8ibEs',
+            range: 'A1',
+            auth: authClient,
+            valueInputOption: 'RAW',
+            insertDataOption: 'INSERT_ROWS',
+            resource: {
+                values: [
+                    [name,
+                        email,
+                        phone,
+                        city,
+                        college,
+                        year,
+                        gender,
+                        ...selectedSports
+                    ]
+                ]
+            }
+        };
+
+        sheet.spreadsheets.values.append(request2, function (err, response) {
+            if (err)
+                console.log(err)
+        });
+
         var request = {
             spreadsheetId: '11sUzVRd1EBhqrcAUUbOHwCAvSzG2pbJaufM1bk2z6L8',
             range: 'A1',
@@ -61,6 +88,7 @@ app.post('/register', (req, res) => {
 
             res.status(200).send()
         });
+
     });
 
 })

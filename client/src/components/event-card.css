@@ -43,6 +43,8 @@ div.event-box:hover {
 }
 
 .sport-info h1 {
-    font-size: 2rem !important;
+    font-size: 1.2rem !important;
     padding: 0 !important;
+    font-family: 'san-serif';
+    font-weight: 400;
 }

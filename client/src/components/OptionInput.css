@@ -14,10 +14,6 @@ select {
     background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 97% !important;
 }
 
-select::placeholder {
-    font-weight: bold;
-}
-
 option {
     color: black;
     font-size: 1rem;
@@ -25,8 +21,4 @@ option {
     font-family: 'Montserrat', sans-serif;
     vertical-align: middle;
     text-transform: capitalize;
-}
-
-option:placeholder-shown {
-    font-weight: bold;
 }

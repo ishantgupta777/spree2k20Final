@@ -5,7 +5,7 @@ import Nav from '../components/nav';
 
 const HomePageFirstSection = () => {
 	return (
-		<div>
+		<div id="home">
 			<section className="home-main-sec">
 				<Nav />
 

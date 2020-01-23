@@ -3,12 +3,20 @@
     src: local('Richardson Brand Accelerator'), url('../assets/fonts/Richardson.otf') format('truetype');
 }
 
+#home {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden !important;
+}
+
 .home-main-sec {
     background: url(../assets/Background3.jpg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden !important;
     color: white;
 }
 
@@ -35,7 +43,7 @@
     text-shadow: 3px 5px #5f2503;
     font-family: 'Montserrat', sans-serif;
     margin-right: 2.5rem !important;
-    margin-top: -30px !important;
+    margin-top: -15px !important;
 }
 
 .logo-and-spree {
@@ -216,7 +224,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        left: 1.5rem;
+        left: .0rem !important;
     }
 
     .main-footer {

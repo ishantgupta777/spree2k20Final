@@ -1,0 +1,48 @@
+div.event-box {
+    width: 210px;
+    height: 200px;
+    transform: rotate(-10deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    transition: 100ms ease-in;
+}
+
+.rotated-box {
+    background-color: red;
+    height: 200px;
+    width: 210px;
+    background-color: transparent;
+    box-sizing: content-box;
+    border: 10px solid #ffad01;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(10deg);
+    transition: 100ms ease-in;
+    transition-delay: 100ms;
+}
+
+.rotated-box:hover,
+div.event-box:hover {
+    transform: rotate(0deg);
+}
+
+.event-box img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.sport-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sport-info h1 {
+    font-size: 2rem !important;
+    padding: 0 !important;
+}

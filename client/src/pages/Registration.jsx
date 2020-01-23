@@ -143,13 +143,20 @@ export default class Registration extends Component {
 								onChange={this.handleChange}
 								name="sports"
 								ref="sports"
+								style={{ fontWeight: '500' }}
 							>
 								{this.state.sports.map((e) => (
 									<option value={e} key={e}>
 										{e}{' '}
 									</option>
 								))}
-								<option value="" selected={this.state.showPlaceholder} disabled>
+								<option
+									value=""
+									selected={this.state.showPlaceholder}
+									disabled
+									style={{ fontWeight: '500' }}
+									id="sport-placeholder"
+								>
 									Sports
 								</option>
 							</select>

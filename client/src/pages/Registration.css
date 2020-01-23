@@ -71,7 +71,7 @@ button.dropdown-toggle {
 .filter-option {
     background: white;
     padding: 0;
-    margin-left: 1rem;
+    margin-left: .8rem;
 }
 
 .filter-option-inner {
@@ -85,6 +85,9 @@ button.dropdown-toggle {
     margin-bottom: 1rem;
     color: black;
     padding: 0;
+    margin-right: 10px !important;
+    background-color: transparent;
+    font-weight: 500;
 }
 
 .submitBtn {
@@ -94,7 +97,7 @@ button.dropdown-toggle {
     outline: none;
     color: black;
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: 500;
     background: white;
     grid-column-start: 1;
     grid-column-end: 3;

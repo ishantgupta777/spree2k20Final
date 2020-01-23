@@ -7,11 +7,15 @@ select {
     padding-left: 3.5%;
     color: black;
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: 500;
     background: white;
     margin: 1rem auto;
     appearance: none;
     background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 97% !important;
+}
+
+select::placeholder {
+    font-weight: bold;
 }
 
 option {
@@ -21,4 +25,8 @@ option {
     font-family: 'Montserrat', sans-serif;
     vertical-align: middle;
     text-transform: capitalize;
+}
+
+option:placeholder-shown {
+    font-weight: bold;
 }

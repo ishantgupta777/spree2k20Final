@@ -1,7 +1,7 @@
 import React from 'react';
+import '../assets/fonts/Richardson.otf';
 import './HomePageFirstSection.css';
 import Nav from '../components/nav';
-import { Link } from 'react-router-dom';
 
 const HomePageFirstSection = () => {
 	return (
@@ -12,7 +12,7 @@ const HomePageFirstSection = () => {
 				<div className="main-section">
 					<div className="logo-and-spree">
 						<div className="logo">
-							<img src={require('../assets/layers/Spreelogo.png')} alt="" />
+							<img src={require('../assets/layers/spree_logo.png')} alt="" />
 						</div>
 						<div className="main-spree-text">
 							<h1>SPREE</h1>

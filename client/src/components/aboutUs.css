@@ -1,0 +1,63 @@
+#parent-about {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    z-index: 100;
+}
+
+div.about-us {
+    color: black;
+    padding: 5rem 0;
+    z-index: 20 !important;
+}
+
+.about-us h1 {
+    color: #FEA201;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'BankGothic';
+    font-size: 8rem;
+    letter-spacing: -10px;
+    font-weight: 500;
+}
+
+.about-us p {
+    color: white;
+    font-family: 'Montserrat';
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    width: 90%;
+    margin: auto;
+}
+
+.videos div {
+    text-align: center;
+    font-family: 'Azonix';
+}
+
+.videos div div {
+    background-color: white;
+    width: 550px;
+    height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.videos p {
+    color: #f8de01;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem !important;
+    text-transform: uppercase;
+    margin: auto;
+}

@@ -1,0 +1,62 @@
+section.gallery {
+    color: white;
+}
+
+.full {
+    width: 100%;
+    margin: 2rem auto;
+    height: 450px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right>div {
+    height: 50%;
+    width: 100%;
+}
+
+.full>div {
+    border: 1.3px solid white;
+}
+
+.full>div:first-child {
+    border-right: none;
+}
+
+.up {
+    border-bottom: 1.3px solid white !important;
+}
+
+#gallery {
+    padding-bottom: 3rem;
+}
+
+#gallery h1 {
+    color: #FEA201;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'BankGothic';
+    font-size: 8rem;
+    letter-spacing: -10px;
+    font-weight: 500;
+    margin-top: 4rem;
+}
+
+.carasoul {
+    max-width: 800px;
+    margin: auto;
+    color: white;
+    margin-top: 2rem;
+    height: 450px;
+}
+
+.gallery img {
+    object-fit: cover;
+}

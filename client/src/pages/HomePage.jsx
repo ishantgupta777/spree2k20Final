@@ -1,11 +1,11 @@
 import React from 'react';
 import './HomePage.css';
-import MainSection from '../sections/HomePageFirstSection';
+import NewHomePage from '../components/NewHomePage';
 
 const HomePage = () => {
 	return (
 		<div>
-			<MainSection />
+			<NewHomePage />
 		</div>
 	);
 };

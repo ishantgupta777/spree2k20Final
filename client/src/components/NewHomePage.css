@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Richardson Brand Accelerator';
+    src: local('Richardson Brand Accelerator'), url('../assets/fonts/Richardson.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BankGothic';
+    src: local('BankGothic Md BT'), url('../assets/fonts/BankGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: local('Azonix'), url('../assets/fonts/Azonix.otf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: transparent;
+}
+
+.main-page-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+div.main-section {
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/mwolf2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.nav-link {
+    color: #f8de01;
+    display: inline-block;
+    font-size: 1.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-bottom: -25px !important;
+    transition: 120ms ease-in-out;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.main-spree-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main-heading {
+    font-size: 17rem;
+    color: white;
+    font-family: 'Richardson Brand Accelerator';
+    letter-spacing: -20px;
+}
+
+#sub-heading {
+    color: #f8de01;
+    font-family: 'Richardson Brand Accelerator';
+    font-size: 2rem;
+    margin-top: -5%;
+    background: -webkit-linear-gradient(#f8de01, #fea201);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.timer {
+    color: white;
+    font-family: 'BankGothic';
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+.timer span {
+    color: #f8de01;
+    width: 1rem;
+}
+
+.follow {
+    margin-right: 1rem;
+}
+
+.footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.footer img {
+    max-height: 40px;
+    margin-left: 1rem;
+}
+
+.MuiListItemText-root {
+    text-align: center !important;
+}

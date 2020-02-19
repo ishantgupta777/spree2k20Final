@@ -72,3 +72,27 @@
     background-color: black;
     overflow: hidden;
 }
+
+@media (max-width:1500px) {
+    #particles {
+        height: 330%;
+    }
+}
+
+@media (max-width:1100px) {
+    #particles {
+        height: 260%;
+    }
+}
+
+@media (max-width:800px) {
+    #particles {
+        height: 370%;
+    }
+}
+
+@media (max-width:500px) {
+    #particles {
+        height: 340%;
+    }
+}

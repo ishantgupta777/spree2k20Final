@@ -23,6 +23,7 @@
 html {
     scroll-behavior: smooth;
     background-color: black;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {

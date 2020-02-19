@@ -30,13 +30,15 @@ let i = 0;
 const addAnimation = (e) => {
 	const span = e.target;
 	span.classList.add('animated');
-	span.classList.add(animations[i]);
+	// span.classList.add(animations[i]);
+	span.classList.add('bounce');
 	span.classList.add('infinite');
 };
 const removeAnimation = (e) => {
 	const span = e.target;
 	span.classList.remove('animated');
-	span.classList.remove(animations[i]);
+	// span.classList.remove(animations[i]);
+	span.classList.remove('bounce');
 	span.classList.remove('infinite');
 	i++;
 	if (i >= length) i = 0;

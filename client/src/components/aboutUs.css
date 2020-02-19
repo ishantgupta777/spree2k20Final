@@ -1,4 +1,6 @@
 #parent-about {
+    width: 100vw !important;
+    overflow-x: hidden;
     position: absolute;
     top: 100vh;
     left: 0;
@@ -8,6 +10,7 @@
 div.about-us {
     color: black;
     padding: 5rem 0;
+    padding-right: 0 !important;
     z-index: 20 !important;
 }
 

@@ -5,7 +5,9 @@ section.gallery {
 .full {
     width: 100%;
     margin: 2rem auto;
-    max-height: 450px;
+    max-height: 480px;
+    overflow: hidden;
+    border-radius: 60px;
 }
 
 
@@ -36,7 +38,9 @@ section.gallery {
     padding-bottom: 3rem;
     width: 80%;
     margin: auto;
+    margin-bottom: 12rem;
 }
+
 
 #gallery h1 {
     color: #FEA201;
@@ -77,4 +81,11 @@ section.gallery {
 
 .gallery img {
     object-fit: cover;
+}
+
+@media (max-width:600px) {
+    section#gallery {
+        margin-bottom: 0rem !important;
+        padding-bottom: 0;
+    }
 }

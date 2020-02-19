@@ -24,7 +24,7 @@ div.devs h1 {
     margin-bottom: 7rem !important;
 }
 
-div.devs .photos>div {
+div.devs .photos>div>div:first-child {
     width: 300px;
     height: 300px;
 }
@@ -49,12 +49,17 @@ div.devs .photos>div {
 .photos {
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     transition: 150ms ease-in-out;
 }
 
 .photos>div {
+    margin-bottom: 2rem;
+}
+
+.photos>div>div:first-child {
     width: 300px;
     height: 300px;
     margin: auto;
@@ -69,19 +74,18 @@ div.devs .photos>div {
     max-width: 300px;
     margin: auto;
     max-height: 300px;
-    margin-bottom: 6rem;
     transform: rotate(-100deg);
     position: relative;
     transition: 150ms ease-in-out;
     left: 20px;
 }
 
-.photos>div:hover img {
+.photos>div>div:first-child:hover img {
     transition-delay: 150ms;
     transform: rotate(0deg);
 }
 
-.photos>div:hover {
+.photos>div>div:first-child:hover {
     transform: rotate(0deg);
 }
 
@@ -124,4 +128,29 @@ div.devs .photos>div {
     #team-parent h1 {
         font-size: 3.5rem;
     }
+}
+
+.selected {
+    color: #FEA201 !important;
+}
+
+.details {
+    font-family: 'Montserrat';
+    margin-top: -35px;
+    justify-content: space-around;
+}
+
+.details p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.name {
+    color: #FEA201;
+    font-size: 2rem !important;
+}
+
+.post {
+    font-weight: bold;
+    color: #FEA201;
 }

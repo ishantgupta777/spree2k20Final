@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import ReactPlayer from 'react-player';
 import Gallery from './Gallery';
+import Footer from './Footer';
 import './aboutUs.css';
 
 export default function AboutUs() {
@@ -42,6 +43,7 @@ export default function AboutUs() {
 				</div>
 			</section>
 			<Gallery />
+			<Footer />
 		</div>
 	);
 }

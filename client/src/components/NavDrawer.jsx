@@ -103,7 +103,6 @@ export default function PersistentDrawerRight(props) {
 	const handleDrawerClose = () => {
 		setOpen(false);
 	};
-
 	return (
 		<div className={classes.root}>
 			<CssBaseline />
@@ -125,7 +124,7 @@ export default function PersistentDrawerRight(props) {
 							<Link className="nav-link" to="/events">
 								Events
 							</Link>
-							<a class="nav-link" href="http://www.bits-spree.org/registration">
+							<a className="nav-link" href="http://www.bits-spree.org/registration">
 								Registration
 							</a>
 						</Box>

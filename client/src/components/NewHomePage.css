@@ -25,6 +25,11 @@ html {
     background-color: black;
 }
 
+::-webkit-scrollbar {
+    color: black;
+    background-color: black;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -81,6 +86,19 @@ div.main-section {
     color: white;
     font-family: 'Richardson Brand Accelerator';
     letter-spacing: -20px;
+    display: flex;
+}
+
+@media (max-width:1300px) {
+    #main-heading {
+        font-size: 14rem;
+    }
+}
+
+@media (max-width:1050px) {
+    #main-heading {
+        font-size: 11rem;
+    }
 }
 
 #sub-heading {
@@ -91,6 +109,44 @@ div.main-section {
     background: -webkit-linear-gradient(#f8de01, #fea201);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:1300px) {
+    #sub-heading {
+        background: -webkit-linear-gradient(white, white);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width:850px) {
+    #main-heading {
+        font-size: 8.7rem;
+    }
+
+    #sub-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:610px) {
+    #main-heading {
+        font-size: 7rem;
+    }
+
+    #sub-heading {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:500px) {
+    #main-heading {
+        font-size: 5.5rem;
+    }
+
+    #sub-heading {
+        font-size: 1rem;
+    }
 }
 
 .footer {
@@ -113,6 +169,13 @@ div.main-section {
     font-weight: bold;
     text-align: center;
     padding-left: 1rem;
+}
+
+@media (max-width:650px) {
+    .timer {
+        font-size: 1rem;
+        padding-left: 0rem;
+    }
 }
 
 .timer span {
@@ -141,4 +204,8 @@ div.main-section {
 
 .MuiListItemText-root {
     text-align: center !important;
+}
+
+.spree-span {
+    display: inline-block;
 }

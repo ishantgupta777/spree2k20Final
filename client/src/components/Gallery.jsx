@@ -9,7 +9,7 @@ export default function Gallery() {
             <section id="gallery">
                 <h1>Gallery</h1>
                 <div className="carasoul">
-                    <Carousel showArrows={false} infiniteLoop selectedItem={0} autoPlay showThumbs={false} emulateTouch showStatus={false} >
+                    <Carousel useKeyboardKeys={true} showArrows={false} infiniteLoop selectedItem={0} autoPlay showThumbs={false} emulateTouch showStatus={false} >
                         <div className="full">
                             <img src={require("../assets/img/5.jpg")} alt=""/>
                         </div>

@@ -122,7 +122,7 @@ export default function PersistentDrawerRight(props) {
 					</a>
 					<div className={classes.navItems}>
 						<Box display={{ xs: 'none', lg: 'block' }}>
-							<Link class="nav-link" to="/events">
+							<Link className="nav-link" to="/events">
 								Events
 							</Link>
 							<a class="nav-link" href="http://www.bits-spree.org/registration">
@@ -174,11 +174,11 @@ export default function PersistentDrawerRight(props) {
 								<ListItemText classes={{ primary: classes.listItemText }}> Events </ListItemText>
 							</ListItem>
 						</Link>
-						<Link to="http://www.bits-spree.org/registration">
+						<a href="http://www.bits-spree.org/registration">
 							<ListItem button>
-								<ListItemText> Registration </ListItemText>
+								<ListItemText classes={{ primary: classes.listItemText }}> Registration </ListItemText>
 							</ListItem>
-						</Link>
+						</a>
 					</Box>
 					<a href="#parent-about">
 						<ListItem button>
@@ -190,12 +190,12 @@ export default function PersistentDrawerRight(props) {
 							<ListItemText classes={{ primary: classes.listItemText }}> GALLERY </ListItemText>
 						</ListItem>
 					</a>
-					<Link>
+					<Link to="/team">
 						<ListItem button>
 							<ListItemText classes={{ primary: classes.listItemText }}> OUR TEAM </ListItemText>
 						</ListItem>
 					</Link>
-					<Link tO="/developers">
+					<Link to="/developers">
 						<ListItem button>
 							<ListItemText classes={{ primary: classes.listItemText }}> DEVELOPERS </ListItemText>
 						</ListItem>

@@ -7,6 +7,7 @@ import { Box } from '@material-ui/core';
 import './particles.css';
 import './NewHomePage.css';
 import './loader.css';
+import { useStateValue } from '../context/loaderState';
 
 const animations = [
 	'wobble',
@@ -46,18 +47,19 @@ const removeAnimation = (e) => {
 };
 
 const NewHomePage = () => {
-	const [ loading, setLoading ] = useState(true);
+	const [ loading, setLoading ] = useStateValue();
 	const handleLoader = () => {
-		const loader = document.querySelector('.loader-parent');
 		setLoading(false);
-		localStorage.setItem('loading_state', false);
-		if (loader) loader.remove();
 		document.querySelector('html').style.height = '';
 		document.querySelector('html').style.overflow = 'auto';
+		document.querySelector('#parent-div').style.opacity = '1';
 	};
 	useEffect(() => {
-		const loadingState = localStorage.getItem('loading_state') == 'true';
-		setLoading(loadingState);
+		if (loading) {
+			document.querySelector('html').style.height = '100vh';
+			document.querySelector('#parent-div').style.opacity = '0';
+			document.querySelector('html').style.overflow = 'hidden';
+		}
 		window.onload = handleLoader;
 	}, []);
 

@@ -7,7 +7,7 @@ const data = [
 		details: [
 			{
 				pic: 22,
-				name: 'Shobhit',
+				name: 'Shobhit Saxena',
 				number: '9549304800',
 				id: 'convener@bits-spree.org',
 				post: 'Convener'
@@ -55,14 +55,21 @@ const data = [
 				name: ' Aditya Singh Rathore',
 				number: ' 9799393011 ',
 				id: ' rathore@bits-spree.org ',
-				post: ''
+				post: 'Chief Coordinator'
 			},
 			{
 				pic: 12,
 				name: 'Rohan Bohra ',
 				number: '9834772359',
 				id: ' rohanbohra23@bits-spree.org',
-				post: ''
+				post: 'Spree Coordinator'
+			},
+			{
+				pic: 25,
+				name: 'Gunjan Samtani',
+				number: '9664702795',
+				id: ' gunjan@bits-spree.org',
+				post: 'Publicity Coordinator'
 			}
 		]
 	},
@@ -74,28 +81,28 @@ const data = [
 				name: 'Siddak Bakshi ',
 				number: '9877370863',
 				id: ' siddak@bits-spree.org ',
-				post: ''
+				post: 'Chief Coordinator'
 			},
 			{
 				pic: 20,
 				name: 'Vedant Patnaik ',
 				number: '9607028141',
 				id: ' patnaik.vedant@bits-spree.org',
-				post: ''
+				post: 'Spree Coordinator'
 			},
 			{
 				pic: 13,
 				name: 'Sarthak Dwivedi ',
 				number: ' 7899121871 ',
 				id: 'dwivedi.sarthak@bits-spree.org ',
-				post: ''
+				post: 'Marketing Coordinator'
 			},
 			{
 				pic: 1,
 				name: 'Chainika Shah ',
 				number: ' 8879553023 ',
 				id: ' chainika@bits-spree.org ',
-				post: ''
+				post: 'Food And Beverage Coordinator'
 			}
 		]
 	},
@@ -107,7 +114,14 @@ const data = [
 				name: ' Sreehari U Kartha',
 				number: ' 9447065758',
 				id: ' sreehariuk@bits-spree.org',
-				post: ''
+				post: 'Spree Coordinator'
+			},
+			{
+				pic: 24,
+				name: ' Sujith Benhur',
+				number: '7620214168',
+				id: ' sujith@bits-spree.org',
+				post: 'Chief Coordinator'
 			}
 		]
 	},
@@ -119,14 +133,14 @@ const data = [
 				name: 'Harshdeep Singh Sehgal',
 				number: '9565049382',
 				id: ' harshdeep@bits-spree.org ',
-				post: ''
+				post: 'Chief Coordinator'
 			},
 			{
 				pic: 5,
 				name: 'Dev Kumar ',
 				number: ' 9766920353 ',
 				id: 'devkumarsingh@bits-spree.org ',
-				post: ''
+				post: 'Spree Coordinator'
 			}
 		]
 	},
@@ -138,14 +152,14 @@ const data = [
 				name: 'Aaryan Goyal ',
 				number: '9414440946',
 				id: 'aaryan@bits-spree.org ',
-				post: ''
+				post: 'Head Of Operations'
 			},
 			{
 				pic: 18,
 				name: 'Tushar Gupta ',
 				number: ' 9079893347 ',
 				id: ' tushar@bits-spree.org',
-				post: ''
+				post: 'Spree Coordinator'
 			}
 		]
 	},
@@ -157,14 +171,21 @@ const data = [
 				name: 'Trinath Choubey ',
 				number: ' 9823060761 ',
 				id: ' trinath@bits-spree.org',
-				post: ''
+				post: 'Assets Head'
 			},
 			{
 				pic: 21,
 				name: 'Yuvam Sharma',
 				number: '9413560705',
 				id: ' yuvam@bits-spree.org',
-				post: ''
+				post: 'Finance Head'
+			},
+			{
+				pic: 26,
+				name: 'Luv Nath',
+				number: '7218855202',
+				id: ' luv.nath@bits-spree.org',
+				post: 'Chief Coordinator'
 			}
 		]
 	},
@@ -176,14 +197,14 @@ const data = [
 				name: ' Nishtha Agrawal',
 				number: '9079865658 ',
 				id: ' nishtha_agrawal@bits-spree.org ',
-				post: ''
+				post: 'Spree Coordinator'
 			},
 			{
 				pic: 7,
-				name: 'parth mangal ',
+				name: 'Parth Mangal',
 				number: '9506831011',
 				id: 'dopychief@bits-spree.org',
-				post: ''
+				post: 'Chief Coordinator'
 			}
 		]
 	},
@@ -195,13 +216,16 @@ const data = [
 				name: ' Vaibhav mittal',
 				number: '7027042625',
 				id: ' vaibhav110347@bits-spree.org ',
-				post: ''
+				post: 'Spree Coordinator'
+			},
+			{
+				pic: 28,
+				name: 'Ritvik Hegde',
+				number: '7620214168',
+				id: ' ritvik@bits-spree.org ',
+				post: 'Chief Coordinator'
 			}
 		]
-	},
-	{
-		category: 'journalism and media affairs',
-		details: []
 	},
 	{
 		category: 'surveillance',
@@ -211,14 +235,14 @@ const data = [
 				name: 'Jain Amey Manojkumar ',
 				number: ' 9850995162 ',
 				id: ' amey@bits-spree.org',
-				post: ''
+				post: 'Chief Coordinator'
 			},
 			{
 				pic: 10,
 				name: ' Avinash ',
 				number: '8317519594',
 				id: 'Avinash_u@bits-spree.org ',
-				post: ''
+				post: 'Spree Coordinator'
 			}
 		]
 	}
@@ -289,9 +313,6 @@ const Team = () => {
 						ambience and decor
 					</div>
 					<div onClick={handlePics} className="department">
-						journalism and media affairs
-					</div>
-					<div onClick={handlePics} className="department">
 						surveillance
 					</div>
 				</div>
@@ -301,7 +322,7 @@ const Team = () => {
 							<img src={require('../assets/team/22.png')} alt="" />
 						</div>
 						<div className="details">
-							<p className="name">Shobhit</p>
+							<p className="name">Shobhit Saxena</p>
 							<p className="post">Convener</p>
 							<p className="number">9549304800</p>
 							<p className="spree-id" />

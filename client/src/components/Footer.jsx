@@ -11,7 +11,7 @@ export default function Footer() {
 					</a>
 				</div>
 				<div className="love">
-					Made with love by{' '}
+					Made by{' '}
 					<a href="http://devsoc.club" target="_blank">
 						DevSoc
 					</a>

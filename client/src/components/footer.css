@@ -41,6 +41,10 @@ footer {
     height: 32px;
 }
 
+.love a:hover {
+    color: #f8de01;
+}
+
 @media (max-width : 600px) {
     footer {
         flex-direction: column;

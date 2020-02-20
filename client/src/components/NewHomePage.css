@@ -23,8 +23,8 @@
 html {
     scroll-behavior: smooth;
     background-color: black;
-    max-height: 100vh !important;
-    overflow: hidden;
+    /* max-height: 100vh !important;
+    overflow: hidden; */
 }
 
 ::-webkit-scrollbar {

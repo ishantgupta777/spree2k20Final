@@ -61,6 +61,7 @@ const NewHomePage = () => {
 			document.querySelector('html').style.overflow = 'hidden';
 		}
 		window.onload = handleLoader;
+		if (document.readyState == 'complete') handleLoader();
 	}, []);
 
 	let today = moment(new Date());

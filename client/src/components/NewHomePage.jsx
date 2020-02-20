@@ -48,12 +48,16 @@ const removeAnimation = (e) => {
 const NewHomePage = () => {
 	const [ loading, setLoading ] = useState(true);
 	const handleLoader = () => {
+		const loader = document.querySelector('.loader-parent');
 		setLoading(false);
-		document.querySelector('.loader-parent').classList.add('loader-finish');
+		localStorage.setItem('loading_state', false);
+		if (loader) loader.remove();
 		document.querySelector('html').style.height = '';
 		document.querySelector('html').style.overflow = 'auto';
 	};
 	useEffect(() => {
+		const loadingState = localStorage.getItem('loading_state') == 'true';
+		setLoading(loadingState);
 		window.onload = handleLoader;
 	}, []);
 
@@ -62,9 +66,11 @@ const NewHomePage = () => {
 	const initialTime = spreeDate.diff(today);
 	return (
 		<div>
-			<div className="loader-parent">
-				<div className="loader" />
-			</div>
+			{loading ? (
+				<div className="loader-parent">
+					<div className="loader" />
+				</div>
+			) : null}
 			<div id="parent-div">
 				<NavDrawer>
 					<div id="particles">

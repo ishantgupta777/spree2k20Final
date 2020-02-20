@@ -52,9 +52,6 @@ export default function Gallery() {
 						<div className="full">
 							<img src={require('../assets/img/11.jpg')} alt="" />
 						</div>
-						<div className="full">
-							<img src={require('../assets/img/12.jpg')} alt="" />
-						</div>
 
 						{/* <div className="full">
                                 <div className="left">

@@ -115,7 +115,7 @@ export default function PersistentDrawerRight(props) {
 				<Toolbar>
 					<a href="#home-main">
 						<img
-							src={require('../assets/output-onlinepngtools.png')}
+							src={require('../assets/rsz_output-onlinepngtools (1).png')}
 							style={{ maxHeight: '90px', marginLeft: '-10px' }}
 						/>
 					</a>

@@ -1,0 +1,10 @@
+.name a {
+    text-decoration: none;
+    color: #FEA201;
+}
+
+@media (max-width:800px) {
+    #team-parent h1 {
+        font-size: 3rem;
+    }
+}

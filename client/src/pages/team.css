@@ -4,7 +4,6 @@
 }
 
 #team-parent {
-    min-height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     background: black;
@@ -50,7 +49,6 @@ div.devs .photos>div>div:first-child {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     transition: 150ms ease-in-out;
 }

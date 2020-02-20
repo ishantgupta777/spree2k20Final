@@ -6,6 +6,7 @@ export default class resgistrationInput extends Component {
 		return (
 			<div>
 				<input
+					className="input-registration"
 					type="text"
 					placeholder={this.props.name}
 					onChange={this.props.handleChange}

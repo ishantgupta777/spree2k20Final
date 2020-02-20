@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Richardson Brand Accelerator';
+    src: local('Richardson Brand Accelerator'), url('../assets/fonts/Richardson.otf') format('truetype');
+}
+
+/* -----------------new css---------------------------- */
 .registration-cover {
     background: url('../assets/layers/team_bg.png');
 }
@@ -18,13 +24,13 @@ form {
     margin-bottom: 2rem;
 }
 
-.registration-grid {
+div.registration-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
-.registration-grid input {
+div.registration-grid input {
     margin: 1rem auto;
 }
 
@@ -112,11 +118,11 @@ button.dropdown-toggle {
     cursor: pointer;
 }
 
-.registered-msg {
+div.registered-msg {
     height: 4rem;
 }
 
-.registered-msg h1 {
+div.registered-msg h1 {
     color: white;
     font-size: 3rem;
     text-align: center;
@@ -126,9 +132,10 @@ button.dropdown-toggle {
     margin-top: 1.8rem;
 }
 
+
 @media (max-width:1200px) {
 
-    .registration-grid input,
+    div.registration-grid input,
     select {
         margin: 1.5rem auto;
     }
@@ -138,12 +145,12 @@ button.dropdown-toggle {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1100px) {
 
-    input,
+    .input-registration,
     select,
     .dropdown.bootstrap-select {
-        width: 25rem !important;
+        width: 22rem !important;
     }
 
     .filter-option-inner-inner,
@@ -154,28 +161,33 @@ button.dropdown-toggle {
     }
 }
 
-@media (max-width:550px) {
+@media (max-width:850px) {
 
     div.registration-grid {
         display: flex;
         flex-direction: column;
     }
 
-    input,
+    div.registration-nav h1 {
+        padding-left: 0rem;
+        font-size: 3rem;
+    }
+
+    .input-registration,
     select,
     .dropdown.bootstrap-select {
-        width: 30rem !important;
+        width: 19rem !important;
     }
 
     .filter-option-inner-inner,
     .filter-option-inner,
     .filter-option {
-        width: 25rem;
+        width: 16rem !important;
         margin: 0 .5rem;
     }
 
     select,
-    input,
+    .input-registration,
     .dropdown.bootstrap-select {
         margin: 0 0;
     }
@@ -184,25 +196,47 @@ button.dropdown-toggle {
         margin-top: 4rem;
     }
 
-    .registration-nav img {
+    div.registration-nav img {
         height: 50px !important;
     }
 
-    .registration-nav h1 {
+    div.registration-nav {
+        text-align: center;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    div.registration-nav h1 {
         text-align: start;
-        padding-left: 5rem;
-        font-size: 3rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center !important;
+        padding-right: 100px !important;
     }
 }
 
 @media (max-width:430px) {
 
-    .registration-nav img {
+    div.registration-nav img {
         height: 40px !important;
     }
 
-    .registration-nav h1 {
+    div.registration-nav h1 {
         padding-left: 3rem;
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    .input-registration,
+    select,
+    .dropdown.bootstrap-select {
+        width: 15rem !important;
+    }
+
+    .filter-option-inner-inner,
+    .filter-option-inner,
+    .filter-option,
+    .dropdown-item {
+        width: 12rem !important;
+        margin: 0 .5rem;
     }
 }

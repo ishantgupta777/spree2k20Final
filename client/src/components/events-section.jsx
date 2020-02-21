@@ -10,7 +10,7 @@ const EventSection = ({ heading }) => {
 		<div id="event">
 			<section className="events">
 				<h1>Sports Events</h1>
-				<Link to="./rulebook.pdf" target="_blank" download id="rulebook-btn">
+				<Link to="./rulebook_new.pdf" target="_blank" download id="rulebook-btn">
 					Rulebook
 				</Link>
 				<div className="event-grid">

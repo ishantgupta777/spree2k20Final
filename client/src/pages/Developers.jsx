@@ -23,7 +23,7 @@ export default function Developers() {
 					</div>
 					<div className="details">
 						<p className="name">Yash Jain</p>
-						<p className="post">Project Leader</p>
+						<p className="post">Head Of Operations</p>
 						<p className="number">8130297010</p>
 						<p className="spree-id">yashjain.1999@gmail.com</p>
 					</div>
@@ -52,7 +52,7 @@ export default function Developers() {
 						</p>
 						<p className="post">Full Stack Developer</p>
 						<p className="number">8888329362</p>
-						<p className="spree-id">ishant@bits-spree.org</p>
+						<p className="spree-id">ishantgupta777@gmail.com</p>
 					</div>
 				</div>
 			</div>

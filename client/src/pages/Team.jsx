@@ -42,8 +42,81 @@ const data = [
 				pic: 8,
 				name: 'Ayush Tewari',
 				number: ' 8860193190 ',
-				id: 'ayush@bits-spree.org',
+				id: 'ayusht@bits-spree.org',
 				post: 'Head Of Operations'
+			}
+		]
+	},
+	{
+		category: 'Council for Student Affairs',
+		details: [
+			{
+				pic: 30,
+				name: 'Dhruv Kaluskar',
+				number: '9665581729',
+				id: 'prez@goa.bits-pilani.ac.in',
+				post: 'CSA President'
+			},
+			{
+				pic: 31,
+				name: 'Avi Chauhan',
+				number: '9665581729',
+				id: 'viceprez@goa.bits-pilani.ac.in',
+				post: 'CSA Vice President'
+			},
+			{
+				pic: 32,
+				name: 'Aanak Sengupta',
+				number: '70305 30377',
+				id: 'trez@goa.bits-pilani.ac.in',
+				post: 'Treasurer'
+			},
+			{
+				pic: 34,
+				name: 'Devashish Rane',
+				number: '9552674242',
+				id: 'sportssec@goa.bits-pilani.ac.in',
+				post: 'Sports Secretary'
+			},
+			{
+				pic: 33,
+				name: 'Aseem Juneja',
+				number: '7589201824',
+				id: 'gensec@goa.bits-pilani.ac.in',
+				post: 'General Secretary'
+			}
+		]
+	},
+	{
+		category: 'Development Team',
+		details: [
+			{
+				pic: 27,
+				name: 'Nipun Agrawal',
+				number: '7665221162',
+				id: 'agarwalnipun12@gmail.com',
+				post: 'Coordinator'
+			},
+			{
+				pic: 'devs/ishant',
+				name: 'Ishant',
+				number: '8888329362',
+				id: 'ishantgupta777@gmail.com',
+				post: 'Full Stack Developer'
+			},
+			{
+				pic: 29,
+				name: 'Yash Jain',
+				number: '8130297010',
+				id: 'yashjain.1999@gmail.com',
+				post: 'Head Of Operations'
+			},
+			{
+				pic: 'devs/aryan',
+				name: 'Aryan Agrawal',
+				number: '9111790711',
+				id: 'aryan@bits-spree.org',
+				post: 'UI/UX'
 			}
 		]
 	},
@@ -137,7 +210,7 @@ const data = [
 			},
 			{
 				pic: 5,
-				name: 'Dev Kumar ',
+				name: 'Dev Kumar Singh',
 				number: ' 9766920353 ',
 				id: 'devkumarsingh@bits-spree.org ',
 				post: 'Spree Coordinator'
@@ -289,6 +362,9 @@ const Team = () => {
 						Organizing Committee
 					</div>
 					<div onClick={handlePics} className="department">
+						Council for Student Affairs
+					</div>
+					<div onClick={handlePics} className="department">
 						Participation and Publicity
 					</div>
 					<div onClick={handlePics} className="department">
@@ -296,6 +372,9 @@ const Team = () => {
 					</div>
 					<div onClick={handlePics} className="department">
 						media and coverage
+					</div>
+					<div onClick={handlePics} className="department">
+						Development Team
 					</div>
 					<div onClick={handlePics} className="department">
 						production and infrastructure
@@ -325,7 +404,7 @@ const Team = () => {
 							<p className="name">Shobhit Saxena</p>
 							<p className="post">Convener</p>
 							<p className="number">9549304800</p>
-							<p className="spree-id" />
+							<p className="spree-id">convener@bits-spree.org</p>
 						</div>
 					</div>
 				</div>

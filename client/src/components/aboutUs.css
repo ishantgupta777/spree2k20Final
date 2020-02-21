@@ -53,7 +53,8 @@ div.about-us {
     font-family: 'Montserrat';
     width: 90%;
     margin: auto;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
     font-weight: 500;
     text-align: left;
 }

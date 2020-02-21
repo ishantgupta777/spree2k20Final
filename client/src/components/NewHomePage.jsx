@@ -126,7 +126,7 @@ const NewHomePage = () => {
 						</div>
 						<div className="footer">
 							<div className="timer">
-								<Timer initialTime={initialTime}>
+								<Timer initialTime={initialTime} direction={'backward'}>
 									<div style={{ display: 'flex' }}>
 										<div>
 											<Timer.Days /> <br /> days

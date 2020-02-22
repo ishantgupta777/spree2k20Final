@@ -15,7 +15,7 @@ export default function Developers() {
 					innovative softwares that solve many technical issues on campus.
 				</p>
 			</div>
-			<h1>Developers</h1>
+			<h1>Coordinators</h1>
 			<div className="photos">
 				<div>
 					<div>

@@ -196,7 +196,7 @@ export default function PersistentDrawerRight(props) {
 					</Link>
 					<Link to="/developers">
 						<ListItem button>
-							<ListItemText classes={{ primary: classes.listItemText }}> DevSoc </ListItemText>
+							<ListItemText classes={{ primary: classes.listItemText }}> About DevSoc </ListItemText>
 						</ListItem>
 					</Link>
 				</List>

@@ -4,6 +4,17 @@ import './developers.css';
 export default function Developers() {
 	return (
 		<div id="team-parent" className="devs">
+			<div className="about-us">
+				<h1>about us</h1>
+				<p>
+					Developers' Society of BITS Goa has been primarily responsible for providing innovative technical
+					solutions to most of the issues in BITS Goa. We began as Mobile Applications Club with the sole
+					purpose of developing mobile applications. But after so many years we have now evolved into a club
+					that has proficient developers from the field of Android Development, Web Development, Game
+					Development and Internet of Things (IoT). All the four verticals work in harmony to develop
+					innovative softwares that solve many technical issues on campus.
+				</p>
+			</div>
 			<h1>Developers</h1>
 			<div className="photos">
 				<div>
@@ -28,7 +39,7 @@ export default function Developers() {
 						<p className="spree-id">yashjain.1999@gmail.com</p>
 					</div>
 				</div>
-				<div>
+				{/* <div>
 					<div>
 						<img src={require('../assets/team/devs/aryan.png')} alt="" />
 					</div>
@@ -38,7 +49,7 @@ export default function Developers() {
 						<p className="number">9111790711</p>
 						<p className="spree-id">aryan@bits-spree.org</p>
 					</div>
-				</div>
+				</div> */}
 				<div>
 					<div>
 						<img src={require('../assets/team/devs/ishant.png')} alt="" />

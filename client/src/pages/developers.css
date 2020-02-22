@@ -3,6 +3,10 @@
     color: #FEA201;
 }
 
+.devs .about-us h1 {
+    margin-bottom: 3rem !important;
+}
+
 @media (max-width:800px) {
     #team-parent h1 {
         font-size: 3rem;

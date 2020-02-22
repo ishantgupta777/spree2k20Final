@@ -50,7 +50,7 @@ export default function Developers() {
 						<p className="spree-id">aryan@bits-spree.org</p>
 					</div>
 				</div> */}
-				<div>
+				{/* <div>
 					<div>
 						<img src={require('../assets/team/devs/ishant.png')} alt="" />
 					</div>
@@ -65,7 +65,7 @@ export default function Developers() {
 						<p className="number">8888329362</p>
 						<p className="spree-id">ishantgupta777@gmail.com</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

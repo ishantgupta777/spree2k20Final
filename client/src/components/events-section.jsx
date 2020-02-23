@@ -16,8 +16,8 @@ const EventSection = ({ heading }) => {
 				<div className="event-grid">
 					<div className="three-sports">
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'1'} sportName="Carrom" />
-						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'2'} sportName="Volleyball" />
-						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'3'} sportName="Tennis" />
+						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'12'} sportName="Snooker" />
+						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'8'} sportName="Power Lifting" />
 					</div>
 					<div className="two-sports">
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'4'} sportName="FootBall" />
@@ -25,8 +25,8 @@ const EventSection = ({ heading }) => {
 					</div>
 					<div className="three-sports">
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'6'} sportName="Badminton" />
+						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'3'} sportName="Tennis" />
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'7'} sportName="Chess" />
-						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'8'} sportName="Power Lifting" />
 					</div>
 					<div className="two-sports">
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'9'} sportName="Kabaddi" />
@@ -34,7 +34,7 @@ const EventSection = ({ heading }) => {
 					</div>
 					<div className="three-sports">
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'11'} sportName="Cricket" />
-						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'12'} sportName="Snooker" />
+						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'2'} sportName="Volleyball" />
 						<EventCard icon={EventCardBgImg} toUrl="/events" sportsImg={'13'} sportName="Squash" />
 					</div>
 				</div>

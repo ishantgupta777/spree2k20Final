@@ -15,7 +15,7 @@ export default function Developers() {
 					innovative softwares that solve many technical issues on campus.
 				</p>
 			</div>
-			<h1>Coordinators</h1>
+			{/* <h1>Coordinators</h1>
 			<div className="photos">
 				<div>
 					<div>
@@ -39,7 +39,7 @@ export default function Developers() {
 						<p className="spree-id">yashjain.1999@gmail.com</p>
 					</div>
 				</div>
-				{/* <div>
+				<div>
 					<div>
 						<img src={require('../assets/team/devs/aryan.png')} alt="" />
 					</div>
@@ -49,8 +49,8 @@ export default function Developers() {
 						<p className="number">9111790711</p>
 						<p className="spree-id">aryan@bits-spree.org</p>
 					</div>
-				</div> */}
-				{/* <div>
+				</div>
+				<div>
 					<div>
 						<img src={require('../assets/team/devs/ishant.png')} alt="" />
 					</div>
@@ -65,8 +65,8 @@ export default function Developers() {
 						<p className="number">8888329362</p>
 						<p className="spree-id">ishantgupta777@gmail.com</p>
 					</div>
-				</div> */}
-			</div>
+				</div>
+			</div> */}
 		</div>
 	);
 }

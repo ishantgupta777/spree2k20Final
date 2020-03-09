@@ -38,9 +38,10 @@ export default class Registration extends Component {
 			'Chess (Boys Girls Mix)',
 			'Squash Team (Boys Girl Mix)',
 			'Squash Individuals',
-			'Powerlifting (55kg-65kg)',
-			'Powerlifting (65kg-75kg)',
-			'Powerlifting (75kg and above)',
+			'Powerlifting (under 68)',
+			'Powerlifting (68kg-75kg)',
+			'Powerlifting (75kg-85kg)',
+			'Powerlifting (above 85)',
 			'Carrom (Boys Girls Mix)'
 		],
 		city: '',
